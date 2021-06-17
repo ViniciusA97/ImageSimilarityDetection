@@ -34,7 +34,7 @@ from scipy import spatial
 # So it is used to find product id based on the product image name
 #################################################
 def match_id(filename):
-  with open('/Users/erdemisbilen/Angular/fashionWebScraping/jsonFiles/image_data.json') as json_file:
+  with open('./output_images.json') as json_file:
     
     for file in json_file:
         seen = json.loads(file)
@@ -43,7 +43,7 @@ def match_id(filename):
           
           if filename==line['imageName']:
             print(line)
-            return line['productId']
+            return line['uuid']
             break
 #################################################
 
@@ -74,7 +74,7 @@ def cluster():
   trees = 10000
 
   # Reads all file names which stores feature vectors 
-  allfiles = glob.glob('/Users/erdemisbilen/Angular/fashionWebScraping/images_scraped/feature-vectors/test/*.npz')
+  allfiles = glob.glob('./result/*.npz')
 
   t = AnnoyIndex(dims, metric='angular')
 

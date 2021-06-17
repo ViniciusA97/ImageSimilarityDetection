@@ -72,7 +72,7 @@ def get_image_feature_vectors():
  
 
   # Loops through all images in a local folder
-  for filename in glob.glob('/Users/erdemisbilen/Angular/fashionWebScraping/images_scraped/full/test/*.jpg'): #assuming gif
+  for filename in glob.glob('./imgs/*.jpg'): #assuming gif
     i = i + 1
 
     print("-----------------------------------------------------------------------------------------")
@@ -91,7 +91,7 @@ def get_image_feature_vectors():
     # Saves the image feature vectors into a file for later use
 
     outfile_name = os.path.basename(filename).split('.')[0] + ".npz"
-    out_path = os.path.join('/Users/erdemisbilen/Angular/fashionWebScraping/images_scraped/feature-vectors/test/', outfile_name)
+    out_path = os.path.join('/home/jovyan/demo/teste/result/', outfile_name)
 
     # Saves the 'feature_set' to a text file
     np.savetxt(out_path, feature_set, delimiter=',')
