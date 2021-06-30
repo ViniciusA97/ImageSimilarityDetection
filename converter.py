@@ -2,13 +2,17 @@ import glob
 import uuid as uuid4
 import json
 
-def createJsonData():
+def createJsonData(termo:str):
     finaljson = []
-    path = './imgs/'
+
+    termo = termo.replace(" ", "_")
+
+    path = './images/' + termo +"/"
+    print("Paht: "+path)
     for filename in glob.glob(path+'*.jpg'): 
         uuid = generateUUID()
-        finalFilename = filename[len(path):]
-        print(finalFilename)
+        finalFilename = filename[len(path):-4]
+        print("FinalFilename: "+finalFilename)
         finaljson.append({"imageName": finalFilename, "uuid":uuid})
 
     print(finaljson)

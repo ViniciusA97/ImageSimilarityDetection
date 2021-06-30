@@ -14,6 +14,7 @@ import time
 # Glob for reading file names in a folder
 import glob
 import os.path
+import os
 #################################################
 
 #################################################
@@ -47,10 +48,10 @@ def load_img(path):
 # Makes an inference for all images stored in a local folder
 # Saves each of the feature vectors in a file
 #################################################
-def get_image_feature_vectors():
+def get_image_feature_vectors(termo:str):
 
   i = 0
-
+  termo = termo.replace(" ", "_")
   start_time = time.time()
 
   print("---------------------------------")
@@ -72,7 +73,12 @@ def get_image_feature_vectors():
  
 
   # Loops through all images in a local folder
-  for filename in glob.glob('./imgs/*.jpg'): #assuming gif
+
+  path = os.getcwd()
+  final_path = path+'/result/'+termo+'/'
+  os.mkdir(final_path)
+
+  for filename in glob.glob('./images/'+termo+'/*.jpg'): #assuming gif
     i = i + 1
 
     print("-----------------------------------------------------------------------------------------")
@@ -91,7 +97,7 @@ def get_image_feature_vectors():
     # Saves the image feature vectors into a file for later use
 
     outfile_name = os.path.basename(filename).split('.')[0] + ".npz"
-    out_path = os.path.join('/home/jovyan/demo/teste/result/', outfile_name)
+    out_path = os.path.join(path+'/result/'+termo+'/', outfile_name)
 
     # Saves the 'feature_set' to a text file
     np.savetxt(out_path, feature_set, delimiter=',')
@@ -103,4 +109,4 @@ def get_image_feature_vectors():
   print("--- %.2f minutes passed ---------" % ((time.time() - start_time)/60))
   print("--- %s images processed ---------" %i)
     
-get_image_feature_vectors()
+#get_image_feature_vectors()

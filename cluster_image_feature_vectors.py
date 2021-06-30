@@ -25,6 +25,7 @@ import json
 # Annoy and Scipy for similarity calculation
 from annoy import AnnoyIndex
 from scipy import spatial
+import os
 #################################################
 
 #################################################
@@ -42,7 +43,6 @@ def match_id(filename):
         for line in seen:
           
           if filename==line['imageName']:
-            print(line)
             return line['uuid']
             break
 #################################################
@@ -55,8 +55,9 @@ def match_id(filename):
 # Calculates the nearest neighbors and image similarity metrics
 # Stores image similarity scores with productID in a json file
 #################################################
-def cluster():
+def cluster(termo:str):
 
+  termo = termo.replace(" ", "_")
   start_time = time.time()
   
   print("---------------------------------")
@@ -66,7 +67,7 @@ def cluster():
   # Defining data structures as empty dict
   file_index_to_file_name = {}
   file_index_to_file_vector = {}
-  file_index_to_product_id = {}
+  file_index_to_uuid_id = {}
 
   # Configuring annoy parameters
   dims = 1792
@@ -74,7 +75,7 @@ def cluster():
   trees = 10000
 
   # Reads all file names which stores feature vectors 
-  allfiles = glob.glob('./result/*.npz')
+  allfiles = glob.glob('./result/'+termo+'/*.npz')
 
   t = AnnoyIndex(dims, metric='angular')
 
@@ -85,9 +86,10 @@ def cluster():
 
     # Assigns file_name, feature_vectors and corresponding product_id
     file_name = os.path.basename(i).split('.')[0]
+    print("File name: ", file_name)
     file_index_to_file_name[file_index] = file_name
     file_index_to_file_vector[file_index] = file_vector
-    file_index_to_product_id[file_index] = match_id(file_name)
+    file_index_to_uuid_id[file_index] = match_id(file_name)
 
     # Adds image feature vectors into annoy index   
     t.add_item(file_index, file_vector)
@@ -95,7 +97,7 @@ def cluster():
     print("---------------------------------")
     print("Annoy index     : %s" %file_index)
     print("Image file name : %s" %file_name)
-    print("Product id      : %s" %file_index_to_product_id[file_index])
+    print("Product id      : %s" %file_index_to_uuid_id[file_index])
     print("--- %.2f minutes passed ---------" % ((time.time() - start_time)/60))
 
 
@@ -107,13 +109,17 @@ def cluster():
   
   named_nearest_neighbors = []
 
+  first_image_name = file_index_to_file_name[0]
+  first_imagx_to_file_vector = file_index_to_file_vector[0]
+  first_imag_to_uuid_id = match_id(file_name)
+
   # Loops through all indexed items
   for i in file_index_to_file_name.keys():
 
     # Assigns master file_name, image feature vectors and product id values
     master_file_name = file_index_to_file_name[i]
     master_vector = file_index_to_file_vector[i]
-    master_product_id = file_index_to_product_id[i]
+    master_uuid_id = file_index_to_uuid_id[i]
 
     # Calculates the nearest neighbors of the master item
     nearest_neighbors = t.get_nns_by_item(i, n_nearest_neighbors)
@@ -126,7 +132,7 @@ def cluster():
       # Assigns file_name, image feature vectors and product id values of the similar item
       neighbor_file_name = file_index_to_file_name[j]
       neighbor_file_vector = file_index_to_file_vector[j]
-      neighbor_product_id = file_index_to_product_id[j]
+      neighbor_uuid_id = file_index_to_uuid_id[j]
 
       # Calculates the similarity score of the similar item
       similarity = 1 - spatial.distance.cosine(master_vector, neighbor_file_vector)
@@ -136,8 +142,8 @@ def cluster():
       # and the product id of the similar items
       named_nearest_neighbors.append({
         'similarity': rounded_similarity,
-        'master_pi': master_product_id,
-        'similar_pi': neighbor_product_id})
+        'master_pi': master_uuid_id,
+        'similar_pi': neighbor_uuid_id})
 
     print("---------------------------------") 
     print("Similarity index       : %s" %i)
@@ -154,5 +160,3 @@ def cluster():
 
   print ("Step.3 - Data stored in 'nearest_neighbors.json' file ") 
   print("--- Prosess completed in %.2f minutes ---------" % ((time.time() - start_time)/60))
-
-cluster()
