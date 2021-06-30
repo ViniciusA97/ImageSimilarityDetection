@@ -1,1 +1,53 @@
-[{"similarity": 1.0, "master_pi": "60210bff-63c6-4159-9088-36a988aa2966", "similar_pi": "60210bff-63c6-4159-9088-36a988aa2966"}, {"similarity": 0.8026, "master_pi": "60210bff-63c6-4159-9088-36a988aa2966", "similar_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788"}, {"similarity": 0.7606, "master_pi": "60210bff-63c6-4159-9088-36a988aa2966", "similar_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f"}, {"similarity": 0.7556, "master_pi": "60210bff-63c6-4159-9088-36a988aa2966", "similar_pi": "198b9583-23f8-49cf-b477-764526d08f28"}, {"similarity": 0.7544, "master_pi": "60210bff-63c6-4159-9088-36a988aa2966", "similar_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71"}, {"similarity": 0.742, "master_pi": "60210bff-63c6-4159-9088-36a988aa2966", "similar_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13"}, {"similarity": 0.7048, "master_pi": "60210bff-63c6-4159-9088-36a988aa2966", "similar_pi": "09a0347e-a279-446b-bf40-051760119454"}, {"similarity": 0.7021, "master_pi": "60210bff-63c6-4159-9088-36a988aa2966", "similar_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566"}, {"similarity": 1.0, "master_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788", "similar_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788"}, {"similarity": 0.8569, "master_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788", "similar_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f"}, {"similarity": 0.8498, "master_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788", "similar_pi": "198b9583-23f8-49cf-b477-764526d08f28"}, {"similarity": 0.8484, "master_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788", "similar_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71"}, {"similarity": 0.8401, "master_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788", "similar_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566"}, {"similarity": 0.8026, "master_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788", "similar_pi": "60210bff-63c6-4159-9088-36a988aa2966"}, {"similarity": 0.8017, "master_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788", "similar_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13"}, {"similarity": 0.7927, "master_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788", "similar_pi": "09a0347e-a279-446b-bf40-051760119454"}, {"similarity": 1.0, "master_pi": "198b9583-23f8-49cf-b477-764526d08f28", "similar_pi": "198b9583-23f8-49cf-b477-764526d08f28"}, {"similarity": 0.8498, "master_pi": "198b9583-23f8-49cf-b477-764526d08f28", "similar_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788"}, {"similarity": 0.8226, "master_pi": "198b9583-23f8-49cf-b477-764526d08f28", "similar_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13"}, {"similarity": 0.8215, "master_pi": "198b9583-23f8-49cf-b477-764526d08f28", "similar_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f"}, {"similarity": 0.7987, "master_pi": "198b9583-23f8-49cf-b477-764526d08f28", "similar_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566"}, {"similarity": 0.7852, "master_pi": "198b9583-23f8-49cf-b477-764526d08f28", "similar_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71"}, {"similarity": 0.7556, "master_pi": "198b9583-23f8-49cf-b477-764526d08f28", "similar_pi": "60210bff-63c6-4159-9088-36a988aa2966"}, {"similarity": 0.718, "master_pi": "198b9583-23f8-49cf-b477-764526d08f28", "similar_pi": "09a0347e-a279-446b-bf40-051760119454"}, {"similarity": 1.0, "master_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566", "similar_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566"}, {"similarity": 0.8415, "master_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566", "similar_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f"}, {"similarity": 0.8401, "master_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566", "similar_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788"}, {"similarity": 0.7987, "master_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566", "similar_pi": "198b9583-23f8-49cf-b477-764526d08f28"}, {"similarity": 0.7894, "master_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566", "similar_pi": "09a0347e-a279-446b-bf40-051760119454"}, {"similarity": 0.7392, "master_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566", "similar_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71"}, {"similarity": 0.7021, "master_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566", "similar_pi": "60210bff-63c6-4159-9088-36a988aa2966"}, {"similarity": 0.6639, "master_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566", "similar_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13"}, {"similarity": 1.0, "master_pi": "09a0347e-a279-446b-bf40-051760119454", "similar_pi": "09a0347e-a279-446b-bf40-051760119454"}, {"similarity": 0.8118, "master_pi": "09a0347e-a279-446b-bf40-051760119454", "similar_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f"}, {"similarity": 0.7927, "master_pi": "09a0347e-a279-446b-bf40-051760119454", "similar_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788"}, {"similarity": 0.7894, "master_pi": "09a0347e-a279-446b-bf40-051760119454", "similar_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566"}, {"similarity": 0.7756, "master_pi": "09a0347e-a279-446b-bf40-051760119454", "similar_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71"}, {"similarity": 0.718, "master_pi": "09a0347e-a279-446b-bf40-051760119454", "similar_pi": "198b9583-23f8-49cf-b477-764526d08f28"}, {"similarity": 0.7048, "master_pi": "09a0347e-a279-446b-bf40-051760119454", "similar_pi": "60210bff-63c6-4159-9088-36a988aa2966"}, {"similarity": 0.6533, "master_pi": "09a0347e-a279-446b-bf40-051760119454", "similar_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13"}, {"similarity": 1.0, "master_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13", "similar_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13"}, {"similarity": 0.8226, "master_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13", "similar_pi": "198b9583-23f8-49cf-b477-764526d08f28"}, {"similarity": 0.8017, "master_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13", "similar_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788"}, {"similarity": 0.7802, "master_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13", "similar_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71"}, {"similarity": 0.7438, "master_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13", "similar_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f"}, {"similarity": 0.742, "master_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13", "similar_pi": "60210bff-63c6-4159-9088-36a988aa2966"}, {"similarity": 0.6639, "master_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13", "similar_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566"}, {"similarity": 0.6533, "master_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13", "similar_pi": "09a0347e-a279-446b-bf40-051760119454"}, {"similarity": 1.0, "master_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71", "similar_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71"}, {"similarity": 0.8484, "master_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71", "similar_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788"}, {"similarity": 0.7852, "master_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71", "similar_pi": "198b9583-23f8-49cf-b477-764526d08f28"}, {"similarity": 0.7802, "master_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71", "similar_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13"}, {"similarity": 0.7756, "master_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71", "similar_pi": "09a0347e-a279-446b-bf40-051760119454"}, {"similarity": 0.7634, "master_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71", "similar_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f"}, {"similarity": 0.7544, "master_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71", "similar_pi": "60210bff-63c6-4159-9088-36a988aa2966"}, {"similarity": 0.7392, "master_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71", "similar_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566"}, {"similarity": 1.0, "master_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f", "similar_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f"}, {"similarity": 0.8569, "master_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f", "similar_pi": "ca88db71-d59e-47ab-b1e2-4cb17d009788"}, {"similarity": 0.8415, "master_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f", "similar_pi": "61432cc7-a23f-4f14-afbf-5ea5331aa566"}, {"similarity": 0.8215, "master_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f", "similar_pi": "198b9583-23f8-49cf-b477-764526d08f28"}, {"similarity": 0.8118, "master_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f", "similar_pi": "09a0347e-a279-446b-bf40-051760119454"}, {"similarity": 0.7634, "master_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f", "similar_pi": "bb46d1b9-a95d-4064-b3ee-a6b5d9037f71"}, {"similarity": 0.7606, "master_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f", "similar_pi": "60210bff-63c6-4159-9088-36a988aa2966"}, {"similarity": 0.7438, "master_pi": "d277a8fa-3727-46eb-bfc6-5859c122ef8f", "similar_pi": "867cff7a-4451-41ca-b508-c8ce2c0dee13"}]
+[
+    {
+        "masterImageName": "2548b1a2b1", 
+        "masterImageUuid": "b1b3bb22-ac81-4e4c-9ea1-94781358f8c3", 
+        "masterImageSimilarity": [
+            {
+                "similarity": 1.0, 
+                "uuid": "21a0be98-386f-4b81-9dc4-17106a7ab64a", 
+                "imageName": "2548b1a2b1"
+            }, 
+            {
+                "similarity": 0.782, 
+                "uuid": "8b859c0b-e977-44bf-a614-637d2296f531", 
+                "imageName": "7f1890f8de"
+            }, 
+            {
+                "similarity": 0.7608, 
+                "uuid": "8e9d0988-1f69-49d1-9e3b-1d48b318b746", 
+                "imageName": "c1f0f92956"
+            }, 
+            {
+                "similarity": 0.7397, 
+                "uuid": "c295f82a-bd62-4d84-9d3a-ce4f39abe3f5", 
+                "imageName": "d4a65d1820"
+            }, 
+            {
+                "similarity": 0.6984, 
+                "uuid": "b1b3bb22-ac81-4e4c-9ea1-94781358f8c3", 
+                "imageName": "f0dcaf2a25"
+            }, 
+            {
+                "similarity": 0.6948, 
+                "uuid": "7a195dfc-0d0e-4353-821c-9c53158fb242", 
+                "imageName": "92d6b1946d"
+            }, 
+            {
+                "similarity": 0.6906, 
+                "uuid": "662e5ec6-e85a-4dd0-813f-daff70ed0e28", 
+                "imageName": "2cc58ea700"
+            }, 
+            {
+                "similarity": 0.6795, 
+                "uuid": "b3f0239d-38ba-4508-a4c6-d68730e5830b", 
+                "imageName": "cb550682e2"
+            }, 
+            {
+                "similarity": 0.5941,
+                "uuid": "3c9dd646-687b-4c56-bffc-ad39a5ddfcb5", 
+                "imageName": "3b40fd58b5"
+            }
+        ]
+    }
+]

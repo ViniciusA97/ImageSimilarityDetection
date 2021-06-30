@@ -110,44 +110,42 @@ def cluster(termo:str):
   named_nearest_neighbors = []
 
   first_image_name = file_index_to_file_name[0]
-  first_imagx_to_file_vector = file_index_to_file_vector[0]
+  first_image_to_file_vector = file_index_to_file_vector[0]
   first_imag_to_uuid_id = match_id(file_name)
 
-  # Loops through all indexed items
-  for i in file_index_to_file_name.keys():
+  named_nearest_neighbors.append({
+    "masterImageName": first_image_name,
+    "masterImageUuid": first_imag_to_uuid_id,
+    "masterImageSimilarity":[]
+  })
 
-    # Assigns master file_name, image feature vectors and product id values
-    master_file_name = file_index_to_file_name[i]
-    master_vector = file_index_to_file_vector[i]
-    master_uuid_id = file_index_to_uuid_id[i]
+  # Calculates the nearest neighbors of the master item
+  nearest_neighbors = t.get_nns_by_item(0, n_nearest_neighbors)
 
-    # Calculates the nearest neighbors of the master item
-    nearest_neighbors = t.get_nns_by_item(i, n_nearest_neighbors)
+  # Loops through the nearest neighbors of the master item
+  for j in nearest_neighbors:
 
-    # Loops through the nearest neighbors of the master item
-    for j in nearest_neighbors:
+    print(j)
 
-      print(j)
+    # Assigns file_name, image feature vectors and product id values of the similar item
+    neighbor_file_name = file_index_to_file_name[j]
+    neighbor_file_vector = file_index_to_file_vector[j]
+    neighbor_uuid_id = file_index_to_uuid_id[j]
 
-      # Assigns file_name, image feature vectors and product id values of the similar item
-      neighbor_file_name = file_index_to_file_name[j]
-      neighbor_file_vector = file_index_to_file_vector[j]
-      neighbor_uuid_id = file_index_to_uuid_id[j]
-
-      # Calculates the similarity score of the similar item
-      similarity = 1 - spatial.distance.cosine(master_vector, neighbor_file_vector)
-      rounded_similarity = int((similarity * 10000)) / 10000.0
+    # Calculates the similarity score of the similar item
+    similarity = 1 - spatial.distance.cosine(first_image_to_file_vector, neighbor_file_vector)
+    rounded_similarity = int((similarity * 10000)) / 10000.0
 
       # Appends master product id with the similarity score 
       # and the product id of the similar items
-      named_nearest_neighbors.append({
-        'similarity': rounded_similarity,
-        'master_pi': master_uuid_id,
-        'similar_pi': neighbor_uuid_id})
+    named_nearest_neighbors[0]["masterImageSimilarity"].append({
+      'similarity': rounded_similarity,
+      'uuid': neighbor_uuid_id,
+      'imageName': neighbor_file_name})
 
     print("---------------------------------") 
-    print("Similarity index       : %s" %i)
-    print("Master Image file name : %s" %file_index_to_file_name[i]) 
+    print("Similarity index       : %s" %j)
+    print("Master Image file name : %s" %file_index_to_file_name[j]) 
     print("Nearest Neighbors.     : %s" %nearest_neighbors) 
     print("--- %.2f minutes passed ---------" % ((time.time() - start_time)/60))
 
