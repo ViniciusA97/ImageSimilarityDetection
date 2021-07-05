@@ -1,3 +1,0 @@
-1 - Ler o JSON nearest_neighbors
-2 - Criar pasta pra cada nivel de similaridade
-3 - Mover as imagens para a pasta com seu respectivo nível de similaridade
