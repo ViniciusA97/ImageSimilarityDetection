@@ -76,7 +76,8 @@ def get_image_feature_vectors(termo:str):
 
   path = os.getcwd()
   final_path = path+'/result/'+termo+'/'
-  os.mkdir(final_path)
+  if not os.path.exists(final_path):
+    os.makedirs(final_path)
 
   for filename in glob.glob('./images/'+termo+'/*.jpg'): #assuming gif
     i = i + 1

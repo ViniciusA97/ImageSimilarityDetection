@@ -12,12 +12,6 @@ from PIL import Image
 # Put the path for your ChromeDriver here
 DRIVER_PATH = "./chromedriver"
 
-wd = webdriver.Chrome(executable_path=DRIVER_PATH)
-
-wd.get('https://google.com')
-
-search_box = wd.find_element_by_css_selector('input.gLFyf')
-
 #search_box.send_keys('Dogs')
 
 def fetch_image_urls(query:str, max_links_to_fetch:int, wd:webdriver, sleep_between_interactions:int=1):
@@ -106,4 +100,3 @@ def search_and_download(search_term:str,driver_path:str,target_path='./images', 
         persist_image(target_folder,elem)
 
 
-wd.quit()
